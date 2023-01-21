@@ -6,6 +6,7 @@
 #len jest wbudowany
 
 import os
+import time
 #daje dostęp do funkcji systemowych
 #standardowa biblioteka, która już jest wgrana
 
@@ -23,5 +24,8 @@ print(os.getcwd())
 
 os.mkdir('new_folder')
 #tworzenie nowego folderu
-
-
+time.sleep(2)
+#odczekanie 2 sekundy przed koeljną akcją
+os.rename('new_folder','new_folder2')
+time.sleep(2)
+os.rmdir('new_folder2')
