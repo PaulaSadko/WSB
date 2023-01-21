@@ -24,3 +24,4 @@ print('Trzecia litera to',c[2])
 print(a + b)
 print(a * b)
 #działania
+
