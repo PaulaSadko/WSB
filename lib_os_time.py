@@ -29,3 +29,9 @@ time.sleep(2)
 os.rename('new_folder','new_folder2')
 time.sleep(2)
 os.rmdir('new_folder2')
+
+os.system('cmd /c "cd:C://Users//vdi-student//Desktop"')
+#os system pozwala wejsc do terminala i wpisac komendę
+
+print(os.getcwd())
+
