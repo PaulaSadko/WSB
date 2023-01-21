@@ -14,6 +14,18 @@ print(content)
 print(content[4])
 #pokaże piątą linię
 
+for i in range (len(content)):
+#lec przez wszystkie linie
+    content[i] = content[i].split(';')
+#wez linie 0,1,2,3 itd itd
+print(content)
+print(content[5])
+print(content[5][3])
 
 
+#dane = 'Paula.Michał.Psiulek'
+#print(dane)
+#dane2 = dane.split('.')
+#splitowanie po kropce
+#print(dane2)
 
