@@ -16,11 +16,14 @@ print(content[4])
 
 for i in range (len(content)):
 #lec przez wszystkie linie
+    content[i] = content[i].replace('\n','')
     content[i] = content[i].split(';')
+
+
 #wez linie 0,1,2,3 itd itd
-print(content)
-print(content[5])
-print(content[5][3])
+#print(content)
+#print(content[5])
+#print(content[5][3])
 
 
 #dane = 'Paula.Michał.Psiulek'
@@ -38,3 +41,15 @@ for i in range(1, len(content)):
 average = total/(len(content)-1)
 print('Srednia wynosi' , round(average,2), 'zlotych')
 print(f'Srednia wynosi {round(average, 2)} zlotych')
+
+
+#3. Oblicz ile kobiet jest na macierzynskim
+total = 0
+for i in range(1, len(content)):
+    if content[i][4] == 't':
+        total += 1
+print(total)
+
+#slowo = 'mama.tata'
+#slowo = slowo.replace('.',' ',2)
+#print(slowo)
