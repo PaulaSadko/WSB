@@ -3,10 +3,11 @@ def przywitanie(imie, nazwisko, wiek):
     if wiek >=18:
        print('Szanowny', nazwisko)
 
+dict = {'imie' : 'Kamil' , 'nazwisko' : 'Kowalski'}
 x = input ('Podaj imie, nazwisko i wiek - oddziel spacja').split()
 
 przywitanie(x[0],x[1], int(x[2]))
-
+przywitanie(dict['imie'], dict['nazwisko'], 22)
 
 
 #rob cos tak dlugo az warunek bedzie spelniony
