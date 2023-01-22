@@ -20,3 +20,5 @@ def test_fissbuzz():
     assert fissbuzz(0) == 0
     assert fissbuzz(-5) == 0
     assert fissbuzz(4.5) == 5
+    assert fissbuzz(4.51) == 'buzz'
+    assert fissbuzz('mama') == 0
