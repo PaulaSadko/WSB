@@ -29,3 +29,12 @@ print(content[5][3])
 #splitowanie po kropce
 #print(dane2)
 
+#2. Obliczanie średniej wypłaty
+
+total = 0
+for i in range(1, len(content)):
+    #total = total + int(content[i][1])
+    total += int(content[i][1])
+average = total/(len(content)-1)
+print('Srednia wynosi' , round(average,2), 'zlotych')
+print(f'Srednia wynosi {round(average, 2)} zlotych')
