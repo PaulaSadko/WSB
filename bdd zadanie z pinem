@@ -1,0 +1,11 @@
+SCENARIO Wprowadzenie niepoprawnego pinu
+
+GIVEN Aktywny panel logowania
+AND Działająca i aktywna karta (pin) włożona do bankomatu
+
+WHEN Uzytkownik wprowadzi niepoprawny 4 cyfrowy pin
+
+THEN Karta zostaje zablokowana
+AND Wyswietla sie odpowidni komunikat
+
+
