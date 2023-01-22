@@ -1,0 +1,20 @@
+SCENARIO: Udana wypłata gotówki
+
+GIVEN Aktywny panel logowania
+AND Bankomat z dostępnymi środkami
+AND Działająca i aktywna karta włożona do bankomatu
+AND Środki na koncie (min. 1000zł w banknotach 50zł)
+AND ZAPAs papieru na minimum jeden wydruk
+
+WHEN Użytkownik prowadzi poprpawny kod pin
+AND UŻytkownik wybiera "wypłata gotówki"
+AND Użytkownik wybierze kwotę do wypłaty (wielokrotność 50zł max. 1000zł)
+AND użytkownik wybierze opcje z wydrukiem
+
+THEN Użytkownik otrzymuje zwrot karty
+AND Użytkownik otrzymuje gotówkę zgodną z żądaniem wypłaty
+AND saldo konta pomniejszone o wypłąconą kwotę
+AND Użytkownik otrzymuje wydruk
+AND Aktywny panel logowania
+
+
